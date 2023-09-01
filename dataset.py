@@ -68,7 +68,7 @@ class KeypointDataset(Dataset):
         keypoint = torch.tensor(keypoints, dtype=torch.float)
 
 
-        if not torch.equal(torch.Tensor([8, 2]), torch.Tensor(list(keypoint.shape))):
+        if not torch.equal(torch.Tensor([68, 2]), torch.Tensor(list(keypoint.shape))):
             print(f"Keypoints Initial: {keypoints_initial}")
             print(f"Keypoints Augment: {keypoints_augment}")
 
